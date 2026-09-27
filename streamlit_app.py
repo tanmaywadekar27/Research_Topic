@@ -126,7 +126,7 @@ st.markdown(
 
 with st.sidebar:
     st.markdown("### Connection")
-    default_url = os.environ.get("GCN_API_URL", "http://localhost:8000")
+    default_url = os.environ.get("GCN_API_URL", "https://research-topic.onrender.com")
     api_base = st.text_input("API base URL", value=default_url).rstrip("/")
 
     if st.button("Check health", use_container_width=True):
